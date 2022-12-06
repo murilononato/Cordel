@@ -45,7 +45,7 @@ header > h1{
 }
 
 header a, footer a{
-    color: white;
+    color: rgb(253, 0, 0);
     font-weight: bolder;
     text-decoration: none;
 }
