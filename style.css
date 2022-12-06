@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Diplomata+SC & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@font-face {
+    font-family: manuscrito;
+    src: url(fonts/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf);
+ }
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: manuscrito;
+    --font3: 'Nerko One', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    background-color: antiquewhite;
+    min-height: 100vh;
+    font-family: var(--font1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;  
+    padding-top: 50px;  
+ 
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header > h1{
+    font-size: 50px;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    font-family: var(--font3)
+
+}
+
+header a, footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*serve para espacamento entre as linhas*/
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: var(--font2)
+}
+section.normal{
+    background-color: white;
+    color: black;
+    
+}
+
+section.imagem{
+    background-color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.349);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > P{
+    background-color: rgba(0, 0, 0, 0.356);
+     width: 400px;
+   text-shadow: 1px 1px 0px black ;
+}
+
+
+section > P{
+    padding-left: 10px;
+    padding-bottom: 2em;
+    
+}
+
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    /* background-position: right center; */
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+
+}
